@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Joanna Dybowska — matematyka, informatyka i aplikacje edukacyjne dla uczniów.">
+  <title>Joanna Dybowska — matematyka i informatyka</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #243249; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .wrap { width: min(calc(100% - 48px), 1000px); margin-inline: auto; }
+    main { padding-block: 24px 28px; }
+    h1 { margin: 0 0 7px; font-size: 18px; }
+    .hint { margin: 0 0 18px; color: #667389; font-size: 14px; line-height: 1.6; }
+    .apps { display: grid; gap: 20px; }
+    .app-row { display: grid; grid-template-columns: 310px minmax(0, 1fr); gap: 24px; align-items: center; }
+    .description { margin: 0; max-width: 540px; color: #59677d; font-size: 14px; line-height: 1.65; }
+    @media (max-width: 680px) { .app-row { grid-template-columns: minmax(0, 1fr); gap: 12px; } }
+    .app { width: 310px; max-width: 100%; display: flex; gap: 13px; align-items: center; padding: 15px 16px; border: 1px solid #dfe5f1; border-radius: 14px; background: #f8faff; color: #243249; text-decoration: none; transition: background .2s, border-color .2s; }
+    .app:hover { background: #edf2ff; border-color: #9cadd1; }
+    .app:focus-visible { outline: 3px solid #3457ab; outline-offset: 4px; }
+    .icon { flex: 0 0 42px; height: 42px; display: grid; place-items: center; background: #e7edfc; color: #344c87; border-radius: 11px; font-size: 23px; }
+    .app-text { flex: 1; min-width: 0; }
+    .app strong { display: block; font-size: 15px; line-height: 1.4; }
+    .app small { display: block; margin-top: 3px; color: #647187; font-size: 12px; line-height: 1.4; }
+    .arrow { color: #405c99; font-size: 22px; }
+    .copyright { padding-block: 18px; border-top: 1px solid #edf0f5; color: #6b778b; font-size: 12px; }
+    @media (prefers-reduced-motion: reduce) { .app { transition: none; } }
+  </style>
+</head>
+<body>
+  <main class="wrap" aria-labelledby="apps-title">
+      <h1 id="apps-title">Aplikacje dla uczniów</h1>
+      <p class="hint">Wybierz aplikację i rozpocznij ćwiczenia.</p>
+      <nav class="apps" aria-label="Aplikacje edukacyjne">
+        <div class="app-row">
+        <a aria-describedby="matma-description" class="app" href="https://jwdyb.github.io/matma-na-wyrywki/">
+          <span class="icon" aria-hidden="true">×</span>
+          <span class="app-text"><strong>Matma na wyrywki</strong><small>Zadania i ćwiczenia matematyczne</small></span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <p class="description" id="matma-description">Aplikacja obejmuje pytania z matematyki dla klas <strong>4–8 szkoły podstawowej</strong>, zarówno na poziomie <strong>łatwiejszym</strong>, jak i <strong>trudniejszym</strong>.</p>
+        </div>
+        <!-- Kolejne kafelki aplikacji można dodać w tym miejscu. -->
+      </nav>
+  </main>
+  <footer class="wrap copyright">© Joanna Dybowska
+  </footer>
+</body>
+</html>
